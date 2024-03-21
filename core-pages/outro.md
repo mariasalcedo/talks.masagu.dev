@@ -16,6 +16,7 @@ layout: two-cols-header
 - Blog: [https://www.masagu.dev](http://www.masagu.dev)
 - Mastodon: [masagu](https://mastodon.green/@masagu)
 - Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo)
+- Illustrations by [Irasutoya](https://www.irasutoya.com/)
 
 </sup>
 </template>
