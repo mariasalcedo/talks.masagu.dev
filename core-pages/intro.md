@@ -15,7 +15,7 @@ Maria Salcedo, developer champignon🍄
 
 ⚡️ Discovered gitops/devops, never seen the light brighter
 
-🏔️1 if not engineering, mountaineering
+🏔️ if not engineering, mountaineering
 
  <div class="absolute bottom-5 left-30px" style="color:gray;">
 
