@@ -1,11 +1,26 @@
 ---
-layout: intro-image-right
-image: "svg.svg"
+layout: image-right
+image: "https://storage.googleapis.com/me-photo/masagu.png"
 ---
 
-# Questions ?
+# Who's this stranger?
 
-## Slides can be found at [https://talks.masagu.dev](https://talks.masagu.dev)
+Maria Salcedo, developer champignon🍄
 
-## and the code at [mariasalcedo/talks.masagu.dev](https://github.com/masagu/talks.masagu.dev)
+🐔 Refactored since '81 ([Metal rooster](https://en.wikipedia.org/wiki/Rooster_(zodiac)))
 
+💪 Freelancing since March on: 
+- backend (java/kotlin/golang/python) 
+- devops / gitops
+
+⚡️ Discovered gitops/devops, never seen the light brighter
+
+🏔️1 if not engineering, mountaineering
+
+ <div class="absolute bottom-5 left-30px" style="color:gray;">
+
+<sup> Blog: [www.masagu.dev](http://www.masagu.dev) (🚧 <sup> _Work In Progress_ </sup> 🚧) </sup>\
+<sup> Mastodon: [@masagu](https://mastodon.green/@masagu) </sup>\
+<sup> Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo) </sup>
+
+</div>

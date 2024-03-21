@@ -1,5 +1,5 @@
 ---
-layout: intro-image-right
+layout: image-right
 image: "https://storage.googleapis.com/me-photo/masagu.png"
 ---
 
@@ -7,14 +7,20 @@ image: "https://storage.googleapis.com/me-photo/masagu.png"
 
 Maria Salcedo, developer champignon🍄
 
-⚡ Refactored since '81, along with:
+🐔 Refactored since '81 ([Metal rooster](https://en.wikipedia.org/wiki/Rooster_(zodiac)))
 
-- started with Basic at 7 
--- > OOP'ed with Java at 19, 
--- > forced to Cobol at 26, 
--- > function'ed to python/kotlin/golang since 32 onwards
-- if not engineering, mountaineering 🏔️
+💪 Freelancing since March on: 
+- backend (java/kotlin/golang/python) 
+- devops / gitops
 
-- Blog: [masagu.dev](http://www.masagu.dev) (_A Work In Progress_)
-- Mastodon: [masagu](https://green-mastodon.com/@masagu)
-- Github: [mariasalcedo](https://github.com/mariasalcedo)
+⚡️ Discovered gitops/devops, never seen the light brighter
+
+🏔️1 if not engineering, mountaineering
+
+ <div class="absolute bottom-5 left-30px" style="color:gray;">
+
+<sup> Blog: [www.masagu.dev](http://www.masagu.dev) (🚧 <sup> _Work In Progress_ </sup> 🚧) </sup>\
+<sup> Mastodon: [@masagu](https://mastodon.green/@masagu) </sup>\
+<sup> Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo) </sup>
+
+</div>
