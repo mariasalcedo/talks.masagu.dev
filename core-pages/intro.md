@@ -5,11 +5,11 @@ image: "https://storage.googleapis.com/me-photo/masagu.png"
 
 # Who's this stranger?
 
-Maria Salcedo, developer champignon🍄
+Maria Salcedo, developer champignon 🍄
 
 🐔 Refactored since '81 ([Metal rooster](https://en.wikipedia.org/wiki/Rooster_(zodiac)))
 
-💪 Freelancing since March on: 
+💪 Freelancing since March on:
 - backend (java/kotlin/golang/python) 
 - devops / gitops
 
