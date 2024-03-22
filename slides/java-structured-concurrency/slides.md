@@ -6,6 +6,10 @@ highlighter: shiki
 lineNumbers: false
 mdc: true
 title: What's Structured Concurrency in Java
+themeConfig:
+  paginationX: r
+  paginationY: t
+  paginationPagesDisabled: [1,2]
 layout: intro-image
 image: https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb 
 ---
@@ -62,3 +66,4 @@ src: structuredconcurrency.md
 ---
 src: outro.md
 ---
+
