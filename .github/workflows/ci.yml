@@ -26,6 +26,7 @@ jobs:
           
       - name: Install Netlify
         run: npm install netlify-cli@17.10.1 -g
+        
       - name: Install Dependencies
         run: npm ci
         
@@ -39,6 +40,7 @@ jobs:
             **/resources
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+          
       - uses: actions/setup-node@v4
 
       - name: Install yarn command
@@ -48,13 +50,42 @@ jobs:
 
       - name: Build slides
         run: |
-          for slide in $(ls ./slides); do
-
-             echo "######################"
-             echo "### Build ${slide} ###"       
-             echo "######################"
+          for slide in $(ls ./slides)
+          do
+             echo "########################################################"
+             echo "        Build ${slide} "       
+             echo "########################################################"
              yarn slidev build "slides/${slide}/slides.md" --out "../../dist/${slide}" --base "/${slide}"
           done 
+          
+      - name: Build index page
+        run : |
+          echo "###################################"
+          echo "           Build Index "       
+          echo "###################################"
+          
+          for talk in $(ls dist); 
+          do
+             talks="${talks}<li><a href=\"${talk}\">${talk}</a></li>"
+          done
+          cat << _EOF_ | tee ./dist/index.html
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <title>Talks by Maria</title>
+          <link rel="me" href="https://mastodon.green/@masagu"/>
+          </head>
+          <body>
+          
+          <div class="main">
+          <h1>Talks by Maria Salcedo (WIP)</h1>
+          <h2>overview</h2>
+              <ul>$(echo $talks)
+              </ul>
+          </div>
+          </body>
+          </html>
+          _EOF_
 
       - name: Deploy to Netlify (dev)
         if: github.ref != 'refs/heads/main'
