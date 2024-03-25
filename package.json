@@ -5,8 +5,7 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export",
-    "multiple_build": "/bin/sh -c 'chmod ug+x scripts/build.sh && ./scripts/build.sh'"
+    "export": "slidev export"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.1.42",

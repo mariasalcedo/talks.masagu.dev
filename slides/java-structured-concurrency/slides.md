@@ -60,10 +60,10 @@ src: virtualthreads.md
 ---
 
 ---
-src: ../../core-pages/structuredconcurrency.md
+src: structuredconcurrency.md
 ---
 
 ---
-src: outro.md
+src: ../../core-pages/outro.md
 ---
 
