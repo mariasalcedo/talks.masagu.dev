@@ -5,12 +5,17 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "multiple_build": "/bin/sh -c 'chmod ug+x scripts/build.sh && ./scripts/build.sh'"
   },
   "dependencies": {
-    "@slidev/cli": "^0.48.2",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "^3.4.21"
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/twemoji": "^1.1.15",
+    "@slidev/cli": "^0.48.5",
+    "@slidev/theme-apple-basic": "^0.25.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-academic": "^1.2.0"
   }
 }
