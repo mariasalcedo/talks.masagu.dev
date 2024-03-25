@@ -52,7 +52,7 @@ image: https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-4.0
 </div>
 
 ---
-src: intro.md
+src: ../../core-pages/intro.md
 ---
 
 ---
@@ -60,7 +60,7 @@ src: virtualthreads.md
 ---
 
 ---
-src: structuredconcurrency.md
+src: ../../core-pages/structuredconcurrency.md
 ---
 
 ---
