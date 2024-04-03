@@ -90,17 +90,8 @@ jobs:
           </html>
           _EOF_
 
-      - name: Deploy to Netlify (dev)
-        if: github.ref != 'refs/heads/main'
-        id: netlify_deploy_dev
-        run: |
-          netlify deploy \
-            --dir dist \
-            --site ${{ secrets.NETLIFY_SITE_ID }} \
-            --auth ${{ secrets.NETLIFY_TOKEN }}
-
       - name: Deploy to Netlify (prod)
-        if: github.ref == 'refs/heads/main'
+        if: ${{ github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]' }}
         id: netlify_deploy_prod
         run: |
           netlify deploy \
