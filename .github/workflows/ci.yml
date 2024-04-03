@@ -91,7 +91,7 @@ jobs:
           _EOF_
 
       - name: Deploy to Netlify (prod)
-        if: github.ref == 'refs/heads/main'
+        if: ${{ github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]' }}
         id: netlify_deploy_prod
         run: |
           netlify deploy \
