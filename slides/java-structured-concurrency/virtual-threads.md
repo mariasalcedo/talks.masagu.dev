@@ -8,14 +8,12 @@
 </span></div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:100px;">
-<span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCmNwdQXDQs8maV4u1aIxJLi1TD3QnfMMEJMPsWYR0dGqinoA18nOq14Cv58j0j2_7Fx_pY5hWkcjAqK23Cbq53y9qgUJ-Qvt_xyV0E7zzjRnZfND4ASKDqY8QhvcYG8hNBgrU7mHZX049/s800/smartphone_girl_stand_smile.pngn" width="80"/> 
-</span></div>
+</div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:100px;">
-<span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiolGywfabiOTNi-u4XEluOU1yqsD_Wkxp3d1B7UdKwjCIa2r2EBJ_YGXS1DchLHIlMGi0MVyMe6Rr5qz641mHs1Wrspz96ANQSWltp2uFZp7HQToBWlQTlg4irGwINo4IbPRbAOM9Adr_G/s1004/sagyouin_stand_smartphone_woman.png" width="50" /> 
-</span></div>
+</div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
 <span v-mark.circle.blue="3">
@@ -23,9 +21,8 @@
 </span></div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:100px;">
-<span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCmNwdQXDQs8maV4u1aIxJLi1TD3QnfMMEJMPsWYR0dGqinoA18nOq14Cv58j0j2_7Fx_pY5hWkcjAqK23Cbq53y9qgUJ-Qvt_xyV0E7zzjRnZfND4ASKDqY8QhvcYG8hNBgrU7mHZX049/s800/smartphone_girl_stand_smile.pngn" width="80"/> 
-</span></div>
+</div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
 <span v-mark.circle.orange="2">
@@ -38,9 +35,8 @@
 </span></div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
-<span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2OmuUmon0A2PrhwXAUI_xHMw3ZqaQ8APFia-NjpipPWhbZslK6KHbhjHtUIc_8KcWy0XEC3FVRMFbAw_MP-3Pg3jijZZny8mJ2GzcEXFDuRsQ_VPGDZcwtFTpLsee2-0vYi_NHsxA3TmY/s800/smartphone_schoolboy_stand.png" width="80"/> 
-</span></div>
+</div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
 <span v-mark.circle.orange="2">
@@ -54,28 +50,28 @@
 
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
-<span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_BltzFNEzwK7mficpTSpgFmn5YNSyyCqAwsVQOl1_D_wjYTnjZjP0ectr68bSwhEMpR9wv9ZPEp-sSUydg5xv5memtMatjYBFcZIZov9D3c0ZrXTNXjJgrLbUTBmj7nODmvkLWGh5K3-j/s800/smartphone_man_stand.png" width="80"/> 
-</span></div>
+</div>
 
 <div style="display:inline-block;margin-left:50px;margin-right:50px;">
 <span v-mark.circle.red="4">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAeGNeOpV8DhSfyIY29t8yrzJZGO_rzNrBBQwlot4jtJ8Fuyy-eIfxLQ1ojuqg4RyFlurEH0fdu0P_JdHcIgvOx1vbast3ml7JDxlC2snHadlbZVyrHLM8mamGwAP3E86Y7KAT_VSnv8lj/s800/sleep_animal_cat.png" width="100" /> 
 </span></div>
 
+<div v-click> </div>
 
 <!--
 concurrent but structured. 
 When dealing with different processes, all running concurrently, you have tasks that are either related or non-related.
 
-[click] When your application scales up to millions of processes, you want to be able to identify them easily when debugging and tracing, regardless of its composition. 
+[click] Then your application scales up to millions of processes. You want to be able to identify them easily when debugging and tracing, regardless of its composition. 
 Whether they are bounded to a context... (next)
 
-[click] Like the dancers, dancing any kind of dance; Or they are running multiple concurrent processes of the same kind...
+[click] Like the dancers, dancing any kind of dance; OR they are running multiple concurrent processes of the same kind...
 
-[click] Like the athletes. Nowadays web applications processes are mostly waiting yet using valuable resources. For an event, an action, and/or an HTTP response.
+[click] Like the athletes. Nowadays, however, processes on web applications are mostly waiting, yet using valuable resources. e.g. For an event, an action, and/or an HTTP response.
 
-[click] Like the people concurrently looking at the phones, waiting for an answer. OR the cat, sleeping until an event happens (food is ready, poop is about to come out, etc). Before project loom started, blocking processes are highly costly for java for either of those reasons. Wrapping a million processes in order to trace them through external frameworks, sharing expensive resources with mostly blocking processes, all due to mainly two problematics.
+[click] Like the people in this example, concurrently looking at the phones, looking like they are waiting for an answer. OR the cat, sleeping until an event happens (food is ready, poop is about to come out, etc). Before Java's project loom started, blocking processes are highly costly for either of those reasons. Wrapping a million processes in order to trace them through external frameworks, sharing expensive resources with mostly blocking processes, all due to mainly two problematics.
 -->
 
 
@@ -96,7 +92,7 @@ Whether they are bounded to a context... (next)
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGz7TpqCSxa-h0OFWGf1Kwo8J8x8MuAZpsFCI9mo51C3k4TB14PQEwgMcTK1H854_BfBuzXEZfXGH3rzjlg2QMqimDqc9q3wBTe7IfV8ZFEyaPUGBOPqeuq_4Hioe8zhEGlM45Jd4p9eb/s800/pool_run_kodomo.png" width="100" style="transform: scaleX(-1);" />
 </div>
 
-<div v-click style="display:inline-block;margin-right:50px;">
+<div v-after style="display:inline-block;margin-right:50px;">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjXr0iBmnvE79s3AxeQsmWnc41BArK-VeFo668bsTwkdsh9jTW3yzVKcZFMP7NJku9aRGXUGwXGVNDyrT0eOg3E0GIaToxEHpvFGNldKWkKhkZL_IXiQwwwPWxgjtfwu54u6kgrkOvHAk/s800/kinshi_pool_hashiru.png" width="100" />
 </div>
 
@@ -129,6 +125,10 @@ Stages running on interleaved threads =>
 - no context, 
 - hard to debug, 
 - operation costs hard to trace
+
+
+<div v-click> </div>
+<div v-click> </div>
 
 <!--
 Second problematic deals with the challenges regarding concurrency. 
@@ -179,8 +179,7 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 </v-clicks>
 
 <!--
-Throughput : transactions per sec
-Latency: Speed
+[click:5] Throughput : transactions per sec / Latency: Speed
 -->
 
 ---
@@ -204,7 +203,7 @@ Latency: Speed
 ---
 # Virtual Threads - Syntax with Executors
 
-```java {all|14|14-19}{maxHeight:'100px'}
+```java {all|14|14-19}
 public class ParallelExampleAutoCloseable {
 
     public Double getAverageEurUsd()
