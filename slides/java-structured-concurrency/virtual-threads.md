@@ -197,6 +197,7 @@ Latency: Speed
 
 <!--
 [click:1] Parallel streams and completable futures since java version 8
+[click:2] By the way: blocking code using classical threads is ok (CompletableFuture), however using them on virtual threads is cheaper
 -->
 
 ---
