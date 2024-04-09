@@ -26,6 +26,10 @@ public CompletableFuture<Order> getOrderAsyncFor(String orderId) {
 }
 ```
 
+<div v-click> </div>
+<div v-click> </div>
+<div v-click> </div>
+
 <!--
 A Completable Future then allows you to switch from one task to the other when it's blocking, within the same platform thread because platform threads are expensive.
 Using though virtual threads, blocking calls are cheap, so using them are just fine and dandy. 
