@@ -132,7 +132,7 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 
 ---
 ---
-# Virtual Threads - Syntax
+# Virtual Threads - Syntax with Executors
 
 ```java {maxHeight:'100px'}
 public class ParallelExampleAutoCloseable {

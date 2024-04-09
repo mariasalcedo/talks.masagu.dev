@@ -1,8 +1,10 @@
 ---
-layout: two-cols
+
 ---
-# Java 
-```java
+# What about Kotlin?
+
+## Java 
+```java {maxHeight:'50px'}
     public Order getOrder(String orderId) throws InterruptedException {
         try (var scope = new StructuredTaskScope<Order>()) {
             Subtask<Order> subtask = scope.fork(() -> orderClient.getOrder(orderId));
@@ -11,10 +13,10 @@ layout: two-cols
         }
     }
 ```
-::right::
-# Kotlin
 
-```kotlin
+## Kotlin
+
+```kotlin {maxHeight:'50px'}
 
 suspend fun getOrder(orderId: String): Order =
     supervisorScope {
