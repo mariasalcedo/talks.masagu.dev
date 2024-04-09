@@ -30,3 +30,19 @@ suspend fun getOrder(orderId: String): Order =
         }
     }
 ```
+
+---
+---
+# Kotlin with Virtual Threads
+
+```kotlin
+val virtualThreadDispatcher = 
+    Executors.newVirtualThreadPerTaskExecutor()
+        .asCoroutineDispatcher()
+
+suspend fun myNiceAsynchronousCode() {
+    withContext(virtualThreadDispatcher) {
+        existingAndComplexBlockingCode()
+    }
+}
+```
