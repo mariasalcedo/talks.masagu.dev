@@ -1,10 +1,10 @@
 ---
-
 ---
 # Syntax
 
 
 ## Structured Concurrency
+
 ```java
 public Order getOrder(String orderId) throws InterruptedException {
     try (var scope = new StructuredTaskScope<Order>()) {
