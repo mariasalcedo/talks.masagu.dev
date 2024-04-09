@@ -15,6 +15,8 @@ layout: two-cols-header
 - Mastodon: [@masagu](https://mastodon.green/@masagu)
 - Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo)
 - Illustrations by [Irasutoya](https://www.irasutoya.com/)
+- Contact me! <mdi-email-outline class="text-blue-400" /> me [at] masagu [dot] dev
+- Wanna hire me? <mdi-email-fast-outline class="text-blue-400" /> anfrage [at] masagu [dot] dev
 
 </sup>
 </template>
