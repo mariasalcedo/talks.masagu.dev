@@ -88,11 +88,11 @@ Whether they are bounded to a context... (next)
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPjEZKnUb5Zfv6weHMWanGZ9nFbWuQP3cXKDcwKWBEuDc6WFCWAK_VJyuJ9NTHNgXk1gBC9GiAYjdLCZmSbymcWgX9AHYzqUikjZ9iIzivVsPBpeE4SdV06G8HlUELX8watBaKnK8Z6v8/s800/kids_pool.png" width="200" />
 </div>
 
- <div v-click.hide style="display:inline-block;margin-right:50px;">
+ <div v-after.hide style="display:inline-block;margin-right:50px;">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGz7TpqCSxa-h0OFWGf1Kwo8J8x8MuAZpsFCI9mo51C3k4TB14PQEwgMcTK1H854_BfBuzXEZfXGH3rzjlg2QMqimDqc9q3wBTe7IfV8ZFEyaPUGBOPqeuq_4Hioe8zhEGlM45Jd4p9eb/s800/pool_run_kodomo.png" width="100" style="transform: scaleX(-1);" />
 </div>
 
-<div v-after style="display:inline-block;margin-right:50px;">
+<div v-click style="display:inline-block;margin-right:50px;">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjXr0iBmnvE79s3AxeQsmWnc41BArK-VeFo668bsTwkdsh9jTW3yzVKcZFMP7NJku9aRGXUGwXGVNDyrT0eOg3E0GIaToxEHpvFGNldKWkKhkZL_IXiQwwwPWxgjtfwu54u6kgrkOvHAk/s800/kinshi_pool_hashiru.png" width="100" />
 </div>
 
