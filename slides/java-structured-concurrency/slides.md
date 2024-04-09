@@ -56,11 +56,23 @@ src: ../../core-pages/intro.md
 ---
 
 ---
-src: virtualthreads.md
+src: virtual-threads.md
 ---
 
 ---
-src: structuredconcurrency.md
+src: structured-concurrency.md
+---
+
+---
+src: java-vs-kotlin.md
+---
+
+---
+src: content.md
+---
+
+---
+src: glossary.md
 ---
 
 ---

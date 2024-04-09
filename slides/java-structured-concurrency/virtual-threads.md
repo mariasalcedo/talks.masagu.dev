@@ -118,7 +118,10 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 - To limit concurrency: `Semaphore`
 - higher throughput <mdi-check-outline class="text-green-400" /> lower latency<mdi-close-outline class="text-red-400" />
 - for a small number of OS threads, resources can be seen as unlimited <sup><sup>(But is an illusion✨)</sup></sup>
-
+- Pinned blocked operations:
+    - on monitored blocks (`synchronized` blocks)
+    - on native methods or a foreign functions
+- deep recursion
 ---
 ---
 # What Virtual Threads DOES NOT intend to implement <mdi-close-outline class="text-red-400" />
@@ -126,5 +129,33 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 - to replace platform Threads
 - to change the Streams API
 - to migrate existing libraries to Virtual Threads
+
+---
+---
+# Virtual Threads - Syntax
+
+```java {maxHeight:'100px'}
+public class ParallelExampleAutoCloseable {
+
+    public Double getAverageEurUsd()
+            throws InterruptedException, ExecutionException {
+
+        Callable<Double> getForexEurUsd = new Callable<Double>() {
+
+            @Override
+            public Double call() throws Exception {
+                return CurrencyExchangeRestClient.getEurUsd();
+            }
+        };
+
+        try (ExecutorService service = Executors.newVirtualThreadPerTaskExecutor();) {
+            Future<Double> value1 = service.submit(getForexEurUsd);
+            Future<Double> value2 = service.submit(getForexEurUsd);
+            Future<Double> value3 = service.submit(getForexEurUsd);
+            return value1.get() + value2.get() + value3.get() / 3;
+        }
+    }
+}
+```
 
 
