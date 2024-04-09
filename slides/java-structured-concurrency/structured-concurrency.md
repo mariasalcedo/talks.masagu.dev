@@ -26,5 +26,3 @@ public CompletableFuture<Order> getOrderAsyncFor(String orderId) {
 ---
 ---
 # Demo Time
-
----

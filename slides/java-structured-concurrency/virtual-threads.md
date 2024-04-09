@@ -53,6 +53,7 @@
 </div>
 
 ---
+---
 # Problematic #1
 ## java threads == OS/platform threads => limited & costly
 
@@ -122,12 +123,14 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
     - on native methods or a foreign functions
 - deep recursion
 ---
+---
 # What Virtual Threads DOES NOT intend to implement <mdi-close-outline class="text-red-400" />
 
 - to replace platform Threads
 - to change the Streams API
 - to migrate existing libraries to Virtual Threads
 
+---
 ---
 # Virtual Threads - Syntax
 
