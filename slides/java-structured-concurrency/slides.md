@@ -51,6 +51,11 @@ image: https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-4.0
   </a>
 </div>
 
+<!--
+Welcome! Today we will talk about project loom's proposal to Structured Concurrency.
+Worth mentioning it is a preview API, meaning that, it is a well defined feature, yet not 100% permanent feature.
+Therefore you won't find it activated unless you enable it through the JVM options on startup.
+-->
 ---
 src: ../../core-pages/intro.md
 ---
