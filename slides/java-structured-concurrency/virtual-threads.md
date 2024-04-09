@@ -119,7 +119,7 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 - higher throughput <mdi-check-outline class="text-green-400" /> lower latency<mdi-close-outline class="text-red-400" />
 - for a small number of OS threads, resources can be seen as unlimited <sup><sup>(But is an illusion✨)</sup></sup>
 - Pinned blocked operations:
-    - on monitored blocks (`synchronized` blocks)
+    - on monitored blocks (`synchronized`)
     - on native methods or a foreign functions
 - deep recursion
 ---
