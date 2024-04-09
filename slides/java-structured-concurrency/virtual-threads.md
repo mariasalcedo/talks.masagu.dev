@@ -84,22 +84,23 @@ Whether they are bounded to a context... (next)
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAMlN6d4lRuRRRuv7pGjuVW2KCdG2aGzYVSMyUuISgp0R9UEQMtigmNhOB5zvv28UuRvnb1_2OPVx9oyo0_vg7taf9L6_ZLlQBGp5uq0scNzc5nOyAshalLbwpsX-bfwzomPCeTNx1gHXs/s800/computer_server_chara1_normal.png" width="100">
 </div>
 
-<div v-click style="display:inline-block;margin-top:100px;margin-right:50px;">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPjEZKnUb5Zfv6weHMWanGZ9nFbWuQP3cXKDcwKWBEuDc6WFCWAK_VJyuJ9NTHNgXk1gBC9GiAYjdLCZmSbymcWgX9AHYzqUikjZ9iIzivVsPBpeE4SdV06G8HlUELX8watBaKnK8Z6v8/s800/kids_pool.png" width="200" />
+<div style="display:inline-block;margin-top:100px;margin-right:50px;">
+<img v-click src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPjEZKnUb5Zfv6weHMWanGZ9nFbWuQP3cXKDcwKWBEuDc6WFCWAK_VJyuJ9NTHNgXk1gBC9GiAYjdLCZmSbymcWgX9AHYzqUikjZ9iIzivVsPBpeE4SdV06G8HlUELX8watBaKnK8Z6v8/s800/kids_pool.png" width="200" />
 </div>
 
- <div v-after.hide style="display:inline-block;margin-right:50px;">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGz7TpqCSxa-h0OFWGf1Kwo8J8x8MuAZpsFCI9mo51C3k4TB14PQEwgMcTK1H854_BfBuzXEZfXGH3rzjlg2QMqimDqc9q3wBTe7IfV8ZFEyaPUGBOPqeuq_4Hioe8zhEGlM45Jd4p9eb/s800/pool_run_kodomo.png" width="100" style="transform: scaleX(-1);" />
+ <div style="display:inline-block;margin-right:50px;">
+<img v-click src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGz7TpqCSxa-h0OFWGf1Kwo8J8x8MuAZpsFCI9mo51C3k4TB14PQEwgMcTK1H854_BfBuzXEZfXGH3rzjlg2QMqimDqc9q3wBTe7IfV8ZFEyaPUGBOPqeuq_4Hioe8zhEGlM45Jd4p9eb/s800/pool_run_kodomo.png" width="100" style="transform: scaleX(-1);" />
 </div>
 
-<div v-click style="display:inline-block;margin-right:50px;">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjXr0iBmnvE79s3AxeQsmWnc41BArK-VeFo668bsTwkdsh9jTW3yzVKcZFMP7NJku9aRGXUGwXGVNDyrT0eOg3E0GIaToxEHpvFGNldKWkKhkZL_IXiQwwwPWxgjtfwu54u6kgrkOvHAk/s800/kinshi_pool_hashiru.png" width="100" />
+<div style="display:inline-block;margin-right:50px;">
+<img v-click src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjXr0iBmnvE79s3AxeQsmWnc41BArK-VeFo668bsTwkdsh9jTW3yzVKcZFMP7NJku9aRGXUGwXGVNDyrT0eOg3E0GIaToxEHpvFGNldKWkKhkZL_IXiQwwwPWxgjtfwu54u6kgrkOvHAk/s800/kinshi_pool_hashiru.png" width="100" />
 </div>
 
  <div style="display:inline-block;">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm7j4O9Fre9FhRX8tdlNhppCwhjAkoOPtG4s0-j8ClpkGFCix3cpZ9Kys7usPGEpOBmGGTZ70wgZSJEXKog8MP_BV0JJIHYEV9zPfjdJnOiWV2eWiCIZcMMP5-Wfyiv5r9caNxvFAm0Mg/s800/cafe_coffee_cup.png" width="100" />
 </div>
 
+<div v-click> </div>
 
 <!--
 problematic 1
@@ -109,7 +110,7 @@ Why? because they’re linked to OS-Threads.
 Meaning, when an application starts, 
 
 [click] it will just allocate some of those OS-threads as platform-threads in a pool. Whenever a process starts, an executor (available from Java 5) will queue this process and execute it one by one. A platform thread becomes available, 
-[click] it will go out of the pool, a process dequeued from the executor and platform thread will be then used. It will then be returned back to the pool whenever that process has finished. However, resources are limited, and it means that if we don’t have many available threads in the pool, and a blocking process starts waiting for an event...
+[click] it will go out of the pool, a process dequeued from the executor and platform thread will be then used. Once that process has finished, the thread will then be returned back to the pool. However, resources are limited, and it means that if we don’t have many available threads in the pool, and a blocking process starts waiting for an event...
 [click] That particular platform thread won't be able to come back to the pool until the blocking process is over. We know now how precious platform threads are, and how easy it is to run out of them when dealing with mostly blocking calls that don't have the need for high CPU computation.
 
 -->
@@ -133,7 +134,7 @@ Stages running on interleaved threads =>
 <!--
 Second problematic deals with the challenges regarding concurrency. 
 The way we develop with platform threads could be problematic, when having a single request composed of multiple blocking calls. 
-[click] Meaning, because the cost are limited and costly, and the way the executor service works, some of those calls won't run under the same thread, given that platform threads aren't bounded to a context.
+[click] Meaning, because the resources are limited and costly, and the way the executor service works, some of those calls won't run under the same thread, given that platform threads aren't bounded to a context.
 [click] Even, a single thread will process multiple unrelated process at a time, making the debugging rather complicated. Trace them, operationally speaking, will be actually very costly because we have to rely on external frameworks to mark process inside of each thread, while utilizing thread resources to trace them.
 -->
 
@@ -195,8 +196,8 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjecENepAjLs-3
 </v-clicks>
 
 <!--
-[click:1] Parallel streams and completable futures since java version 8
-[click:2] By the way: blocking code using classical threads is ok (CompletableFuture), however using them on virtual threads is cheaper
+[click:2] Parallel streams and completable futures since java version 8
+[click:1] By the way: blocking code using classical threads is ok (CompletableFuture), however using them on virtual threads is cheaper
 -->
 
 ---
