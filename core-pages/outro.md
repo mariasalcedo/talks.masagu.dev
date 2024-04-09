@@ -11,10 +11,8 @@ layout: two-cols-header
 
 <sup>
 
-- Slides:  [https://talks.masagu.dev](https://talks.masagu.dev)
-- Slides' code:  [https://github.com/mariasalcedo/talks.masagu.dev](https://github.com/mariasalcedo/talks.masagu.dev)
 - Blog: [https://www.masagu.dev](http://www.masagu.dev)
-- Mastodon: [masagu](https://mastodon.green/@masagu)
+- Mastodon: [@masagu](https://mastodon.green/@masagu)
 - Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo)
 - Illustrations by [Irasutoya](https://www.irasutoya.com/)
 
