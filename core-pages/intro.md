@@ -9,7 +9,7 @@ Maria Salcedo, developer champignon 🍄
 
 🐔 Refactored since '81 ([Metal rooster](https://en.wikipedia.org/wiki/Rooster_(zodiac)))
 
-💪 Freelancing since March on:
+💪 Freelancing since 2024 on:
 - backend (java/kotlin/golang/python) 
 - devops / gitops
 
@@ -22,5 +22,5 @@ Maria Salcedo, developer champignon 🍄
 <sup> Blog: [www.masagu.dev](http://www.masagu.dev) (🚧 <sup> _Work In Progress_ </sup> 🚧) </sup>\
 <sup> Mastodon: [@masagu](https://mastodon.green/@masagu) </sup>\
 <sup> Github: [https://github.com/mariasalcedo](https://github.com/mariasalcedo) </sup>
-
+<sup> Wanna hire me? <mdi-email-fast-outline class="text-blue-400" /> anfrage _\[at\]_ masagu _\[dot\]_ dev </sup>
 </div>
