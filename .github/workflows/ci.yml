@@ -76,7 +76,6 @@ jobs:
           <html>
           <head>
           <title>Talks by Maria</title>
-          <link rel="me" href="https://mastodon.green/@masagu"/>
           </head>
           <body>
           
@@ -86,6 +85,13 @@ jobs:
               <ul>$(echo $talks)
               </ul>
           </div>
+          <div>
+            <p align="left" dir="auto">
+              <a rel="nofollow me" href="https://mastodon.green/@masagu">
+                <img alt="Maria's Mastodon" src="https://camo.githubusercontent.com/811f661b2b6f3e62783dd0b0456889cb7f2c6a8e145eb0d37f60453d59076579/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666c6174266d6573736167653d4d6173746f646f6e26636f6c6f723d363336344646266c6f676f3d6d6173746f646f6e266c6f676f436f6c6f723d7768697465266c6162656c3d" style="max-width: 100%;">
+              </a>
+            </p>
+          <div>
           </body>
           </html>
           _EOF_
