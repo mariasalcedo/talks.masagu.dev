@@ -85,6 +85,7 @@ jobs:
               <ul>$(echo $talks)
               </ul>
           </div>
+          <br>
           <div>
             <p align="left" dir="auto">
               <a rel="nofollow me" href="https://mastodon.green/@masagu">
