@@ -1,4 +1,4 @@
----
+
 ---
 # What about Kotlin?
 
@@ -31,7 +31,6 @@ suspend fun getOrder(orderId: String): Order =
     }
 ```
 
----
 ---
 # Kotlin with Virtual Threads
 
